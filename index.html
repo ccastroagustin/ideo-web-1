@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ideo — Software que transforma ideas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span>ideo<span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        
+      </ul>
+      <button class="nav-cta" id="navCta">Hablemos</button>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" class="mob-link">Inicio</a>
+      <a href="#services" class="mob-link">Servicios</a>
+      <a href="#clients" class="mob-link">Clientes</a>
+      <a href="#contact" class="mob-link">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge" id="heroBadge">
+        <span class="badge-dot"></span>
+        Disponibles para proyectos
+      </div>
+      <h1 class="hero-title" id="heroTitle">
+        <span class="line">Convertimos</span>
+        <span class="line accent-line">ideas en</span>
+        <span class="line">software.</span>
+      </h1>
+      <p class="hero-sub" id="heroSub">
+        Desarrollamos productos digitales que escalan, conectan y generan impacto real.<br />
+        Rápido. Limpio. Con propósito.
+      </p>
+      <div class="hero-actions" id="heroActions">
+        <a href="#services" class="btn btn-primary">Ver servicios</a>
+        <a href="#contact" class="btn btn-ghost">Empecemos →</a>
+      </div>
+      <div class="hero-stats" id="heroStats">
+        <div class="stat">
+          <span class="stat-num" data-target="40">0</span><span class="stat-sym">+</span>
+          <p>Proyectos</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><span class="stat-sym">%</span>
+          <p>Satisfacción</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span><span class="stat-sym">×</span>
+          <p>Más rápido</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="heroVisual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-title">ideo.config.js</span>
+        </div>
+        <pre class="code-body"><span class="kw">const</span> <span class="fn">ideo</span> = {
+  <span class="key">mission</span>: <span class="str">"build fast"</span>,
+  <span class="key">stack</span>: [<span class="str">"React"</span>, <span class="str">"Node"</span>, <span class="str">"AI"</span>],
+  <span class="key">deploy</span>: <span class="kw">async</span> () =&gt; {
+    <span class="kw">await</span> <span class="fn">ship</span>(product);
+    <span class="com">// 🚀 ¡listo!</span>
+  }
+};</pre>
+        <div class="code-footer">
+          <span class="run-btn">▶ Run</span>
+          <span class="run-status">● live</span>
+        </div>
+      </div>
+      <div class="floating-tags">
+        <span class="ftag" style="--d:0s">TypeScript</span>
+        <span class="ftag" style="--d:0.4s">Docker</span>
+        <span class="ftag" style="--d:0.8s">GraphQL</span>
+        <span class="ftag" style="--d:1.2s">CI/CD</span>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ SERVICES ░░ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">— Lo que hacemos</p>
+        <h2 class="section-title">Soluciones a medida<br /><em>para cada negocio</em></h2>
+        <p class="section-desc">Desde tu primera página hasta sistemas complejos, construimos lo que tu negocio necesita.</p>
+      </div>
+      <div class="services-grid services-grid-2">
+
+        <!-- Páginas web -->
+        <div class="service-card reveal" data-delay="0">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M4 18h40" stroke="currentColor" stroke-width="2.5"/><circle cx="11" cy="13" r="2" fill="currentColor"/><circle cx="18" cy="13" r="2" fill="currentColor"/></svg>
+          </div>
+          <span class="card-num">01</span>
+          <h3>Páginas Web</h3>
+          <p>Sitios institucionales, landing pages y portfolios con diseño moderno y rendimiento top. Optimizados para SEO y conversión desde el día uno.</p>
+          <div class="card-tags">
+            <span>Landing page</span><span>Corporativa</span><span>SEO</span><span>E-commerce</span>
+          </div>
+          <a href="#contact" class="card-arrow">→</a>
+        </div>
+
+        <!-- Software de gestión -->
+        <div class="service-card reveal featured-card" data-delay="100">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M14 18h20M14 24h14M14 30h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="36" cy="30" r="6" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M39 33l3 3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <span class="card-num">02</span>
+          <h3>Software de Gestión</h3>
+          <p>Sistemas a medida para gestionar productos, stock, proveedores y costos de tu negocio. Reemplazá las planillas y tomá decisiones con datos reales en tiempo real.</p>
+          <div class="card-tags">
+            <span>Inventario</span><span>Costos</span><span>Proveedores</span><span>Reportes</span>
+          </div>
+          <a href="#contact" class="card-arrow">→</a>
+        </div>
+
+        <!-- E-commerce -->
+        <div class="service-card reveal" data-delay="200">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 8h4l5 22h22l4-14H13" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="38" r="3" stroke="currentColor" stroke-width="2.5"/><circle cx="34" cy="38" r="3" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <span class="card-num">03</span>
+          <h3>Tiendas Online</h3>
+          <p>E-commerce completo con carrito, pagos integrados (MercadoPago, Stripe), gestión de pedidos y panel de administración propio. Tu tienda, tus reglas.</p>
+          <div class="card-tags">
+            <span>MercadoPago</span><span>Carrito</span><span>Admin panel</span>
+          </div>
+          <a href="#contact" class="card-arrow">→</a>
+        </div>
+
+        <!-- Apps Mobile -->
+        <div class="service-card reveal" data-delay="300">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="13" y="4" width="22" height="40" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M20 38h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M13 10h22" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <span class="card-num">04</span>
+          <h3>Apps Mobile</h3>
+          <p>Aplicaciones iOS y Android con una sola base de código. Diseño nativo, notificaciones push, acceso a cámara, GPS y mucho más.</p>
+          <div class="card-tags">
+            <span>iOS</span><span>Android</span><span>React Native</span>
+          </div>
+          <a href="#contact" class="card-arrow">→</a>
+        </div>
+
+        <!-- Automatizaciones -->
+        <div class="service-card reveal" data-delay="400">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6v8M24 34v8M6 24h8M34 24h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.5"/><path d="M10 10l6 6M32 32l6 6M10 38l6-6M32 16l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span class="card-num">05</span>
+          <h3>Automatizaciones</h3>
+          <p>Conectamos tus herramientas y automatizamos tareas repetitivas: facturación, reportes, emails, sincronización entre sistemas. Más tiempo para lo que importa.</p>
+          <div class="card-tags">
+            <span>Integraciones</span><span>APIs</span><span>Workflows</span>
+          </div>
+          <a href="#contact" class="card-arrow">→</a>
+        </div>
+
+        <!-- IA aplicada -->
+        <div class="service-card reveal" data-delay="500">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16S32.8 8 24 8z" stroke="currentColor" stroke-width="2.5"/><path d="M18 22c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/><path d="M24 30v6M30 24h6M12 24h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span class="card-num">06</span>
+          <h3>IA Aplicada</h3>
+          <p>Incorporamos inteligencia artificial en tu negocio: chatbots, análisis de datos, generación de contenido y predicciones. La IA al servicio de tu operación real.</p>
+          <div class="card-tags">
+            <span>Chatbots</span><span>Análisis</span><span>LLMs</span>
+          </div>
+          <a href="#contact" class="card-arrow">→</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CLIENTS ░░ -->
+  <section class="clients-section" id="clients">
+    <div class="clients-bg"></div>
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center; max-width:600px; margin: 0 auto 4rem;">
+        <p class="section-label">— Quiénes confían en nosotros</p>
+        <h2 class="section-title">Nuestros <em>clientes</em></h2>
+        <p class="section-desc" style="margin: .8rem auto 0;">Estamos construyendo algo sólido. Pronto este espacio va a estar lleno de historias reales.</p>
+      </div>
+
+      <div class="clients-empty reveal">
+        <div class="empty-visual">
+          <div class="empty-orbit orbit-1"></div>
+          <div class="empty-orbit orbit-2"></div>
+          <div class="empty-orbit orbit-3"></div>
+          <div class="empty-center">
+            <span class="empty-icon">✦</span>
+          </div>
+          <div class="orbit-dot od-1"></div>
+          <div class="orbit-dot od-2"></div>
+          <div class="orbit-dot od-3"></div>
+        </div>
+        <div class="empty-text">
+          <h3>Seás el primero.</h3>
+          <p>Todavía no tenemos clientes públicos — y eso es una oportunidad para vos. Trabajamos con dedicación total en cada proyecto inicial, con precios de lanzamiento y atención personalizada.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem; display:inline-flex;">Empecemos juntos →</a>
+        </div>
+      </div>
+
+      <div class="clients-perks reveal">
+        <div class="perk-item">
+          <span class="perk-icon">🎯</span>
+          <div>
+            <strong>Atención directa</strong>
+            <p>Hablás con quien desarrolla. Sin intermediarios, sin demoras.</p>
+          </div>
+        </div>
+        <div class="perk-item">
+          <span class="perk-icon">💡</span>
+          <div>
+            <strong>Precio de lanzamiento</strong>
+            <p>Los primeros clientes acceden a condiciones especiales.</p>
+          </div>
+        </div>
+        <div class="perk-item">
+          <span class="perk-icon">🚀</span>
+          <div>
+            <strong>Entrega rápida</strong>
+            <p>Primeras versiones en semanas. Iteramos juntos desde el día uno.</p>
+          </div>
+        </div>
+        <div class="perk-item">
+          <span class="perk-icon">🔒</span>
+          <div>
+            <strong>Código tuyo</strong>
+            <p>Todo lo que construimos es 100% tuyo. Sin dependencias ocultas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section class="contact" id="contact">
+    <div class="contact-glow"></div>
+    <div class="container">
+      <div class="contact-inner reveal">
+        <div class="contact-left">
+          <p class="section-label">— Empecemos</p>
+          <h2 class="contact-title">¿Tu idea<br />merece <em>existir</em>.</h2>
+          <p class="contact-sub">Contanos tu proyecto y te respondemos en menos de 24 hs. Sin compromiso.</p>
+          <div class="contact-info">
+        <div class="ci-item">
+          <span class="ci-icon">✉</span>
+          <span><a href="mailto:hola@ideo.dev">ideodesarrollos@gmail.com</a></span>
+        </div>
+            <div class="ci-item">
+              <span class="ci-icon">📍</span>
+              <span>Argentina · Cordoba · Av La Voz Del Interior 8851 </span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="fname">Nombre</label>
+              <input type="text" id="fname" placeholder="Tu nombre" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" placeholder="tu@email.com" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="fmsg">Proyecto</label>
+              <textarea id="fmsg" rows="4" placeholder="Contanos tu idea..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Enviar mensaje</span>
+              <span class="btn-icon">→</span>
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo"><span class="logo-bracket">[</span>ideo<span class="logo-bracket">]</span></span>
+      <p class="footer-text">© 2026 ideo — Construido con ☕ y mucho código.</p>
+      <div class="footer-links">
+        <a href="#hero">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#clients">Clientes</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
