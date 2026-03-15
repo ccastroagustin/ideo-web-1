@@ -1254,4 +1254,8 @@ input, textarea { font-family: inherit; }
 @media (max-width: 480px) {
   .clients-perks { grid-template-columns: 1fr; }
   .empty-visual { width: 240px; height: 240px; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1ede6b9fca50893514e9a65664f404c358dc1d7a
